@@ -17,7 +17,6 @@ package com.commonsware.cwac.locpoll;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 
 /**
  * BroadcastReceiver to be launched by AlarmManager. Simply
