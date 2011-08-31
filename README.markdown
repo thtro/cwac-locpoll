@@ -86,13 +86,18 @@ extra (containing a `String` with an error message). For example:
 				msg="Invalid broadcast received!";
 			}
 
+In the case where you get an error message via `EXTRA_ERROR`, there
+will also be an extra named `EXTRA_LASTKNOWN`, containing the results
+of `getLastKnownLocation()` for your selected provider. This may be
+`null` &mdash; if not, it will be a `Location` object.
+
 Dependencies
 ------------
 This project has no dependencies.
 
 Version
 -------
-This is version 0.1 of this module, meaning it is exceptionally new.
+This is version 0.2 of this module, meaning it is less new than before.
 
 Demo
 ----
@@ -116,9 +121,7 @@ on [StackOverflow](http://stackoverflow.com/questions/ask) tagged with `commonsw
 what CWAC module you are having issues with, and be sure to include source code 
 and stack traces if you are encountering crashes.
 
-
 Release Notes
 -------------
+v0.2.0: added `EXTRA_LASTKNOWN` support
 v0.1.0: initial release
-
-[gg]: http://groups.google.com/group/cw-android
