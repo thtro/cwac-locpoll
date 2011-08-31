@@ -28,6 +28,7 @@ public class LocationPoller extends BroadcastReceiver {
 	public static final String EXTRA_INTENT="com.commonsware.cwac.locpoll.EXTRA_INTENT";
 	public static final String EXTRA_LOCATION="com.commonsware.cwac.locpoll.EXTRA_LOCATION";
 	public static final String EXTRA_PROVIDER="com.commonsware.cwac.locpoll.EXTRA_PROVIDER";
+  public static final String EXTRA_LASTKNOWN="com.commonsware.cwac.locpoll.EXTRA_LASTKNOWN";
 
 	/**
 		* Standard entry point for a BroadcastReceiver. Delegates

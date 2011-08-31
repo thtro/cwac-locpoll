@@ -17,7 +17,6 @@ package com.commonsware.cwac.locpoll.demo;
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
-import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.location.LocationManager;
 import android.os.Bundle;
@@ -43,7 +42,7 @@ public class LocationPollerDemo extends Activity {
 		i.putExtra(LocationPoller.EXTRA_INTENT,
 							 new Intent(this, LocationReceiver.class));
 		i.putExtra(LocationPoller.EXTRA_PROVIDER,
-							 LocationManager.NETWORK_PROVIDER);
+							 LocationManager.GPS_PROVIDER);
 		
 		pi=PendingIntent.getBroadcast(this, 0, i, 0);
 		mgr.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
